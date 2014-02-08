@@ -1,4 +1,3 @@
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
@@ -8,7 +7,6 @@ Bundle 'monokai'
 Bundle 'pylint-mode'
 Bundle 'pep8'
 Bundle 'virtualenv.vim'
-Bundle 'vim-multiple-cursors'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'scrooloose/nerdtree'
 let NERDTreeChDirMode=2 "选中root即设置为当前目录
@@ -26,9 +24,6 @@ set guioptions-=b
 
 "文件类型
 filetype plugin indent on
-
-"关闭python的文档
-autocmd FileType python setlocal completeopt-=preview
 
 "增强模式中命令自动完
 set wildmenu
