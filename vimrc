@@ -9,6 +9,7 @@ Bundle 'pep8'
 Bundle 'virtualenv.vim'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'snipMate'
+Bundle 'neocomplcache'
 
 "隐藏滚动条
 set guioptions-=m
@@ -70,3 +71,5 @@ set nu
 
 "配置主题和字体
 color monokai
+
+let g:neocomplcache_enable_at_startup = 1
