@@ -9,6 +9,7 @@ Bundle 'pep8'
 Bundle 'virtualenv.vim'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'snipMate'
+Bundle 'neocomplcache'
 
 "隐藏滚动条
 set guioptions-=m
@@ -34,13 +35,18 @@ set foldmethod=manual
 "同vi不兼容
 set nocompatible
 
+"外部修改时自动读取
+set autoread
+
 "高亮
 syntax on
 "设置高亮搜索
 set hlsearch
 "输入字符串就显示匹配点
 set incsearch
-"输入的命令显示出来，看的清楚些。
+"搜索忽略大小写
+set ignorecase 
+"输入的命令显示出来，看的清楚些
 set showcmd
 "隐藏工具栏
 set guioptions-=T
@@ -74,3 +80,5 @@ color monokai
 " Omnicppcomplete settings ( Close the preview window automatically )
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+let g:neocomplcache_enable_at_startup = 1
