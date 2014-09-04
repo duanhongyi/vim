@@ -85,5 +85,9 @@ set nu
 
 "配置主题和字体
 color monokai
+ 
+" Omnicppcomplete settings ( Close the preview window automatically )
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 let g:neocomplcache_enable_at_startup = 1
