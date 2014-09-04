@@ -1,3 +1,11 @@
+if has("gui_gtk2")
+    set guifont=DejaVu\ Sans\ Mono
+elseif has("gui_macvim")
+    set guifont=DejaVu_Sans_Mono
+elseif has("gui_win32")
+    set guifont=DejaVu_Sans_Mono
+end
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
@@ -9,6 +17,7 @@ Bundle 'pep8'
 Bundle 'virtualenv.vim'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'snipMate'
+Bundle 'fcitx.vim'
 Bundle 'neocomplcache'
 
 "隐藏滚动条
