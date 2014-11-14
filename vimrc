@@ -17,7 +17,6 @@ Bundle 'pep8'
 Bundle 'virtualenv.vim'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'snipMate'
-Bundle 'fcitx.vim'
 Bundle 'neocomplcache'
 
 "隐藏滚动条
