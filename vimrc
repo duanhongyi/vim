@@ -18,6 +18,8 @@ Bundle 'virtualenv.vim'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'snipMate'
 Bundle 'neocomplcache'
+Bundle 'editorconfig-vim'
+Bundle 'tell-k/vim-autopep8'
 
 "隐藏滚动条
 set guioptions-=m
